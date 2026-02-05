@@ -4,8 +4,7 @@
 
 ## System Architecture
 <img 
-src="C:\Users\abdel\OneDrive\Desktop\DevOps\Dev_Projects\Note-Taker\Note-Taker-W
-ebsite-Application\systemArch\System_Arch.png" width="700">
+src="systemArch\System_Arch.png" width="700">
 
 
 ## Project Overview
