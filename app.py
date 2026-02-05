@@ -1,12 +1,13 @@
 
 from flask import Flask, render_template, request, redirect
 from flask_mysqldb import MySQL
+import os
 
 app = Flask(__name__)
-app.config['MYSQL_HOST']     ='localhost'
-app.config['MYSQL_USER']     ='notes_user'
-app.config['MYSQL_PASSWORD'] ='rra31CB$'
-app.config['MYSQL_DB']       ='notesdb'
+app.config['MYSQL_HOST'] = os.environ.get('DB_HOST', 'localhost')
+app.config['MYSQL_USER'] = os.environ.get('DB_USER')
+app.config['MYSQL_PASSWORD'] = os.environ.get('DB_PASSWORD')
+app.config['MYSQL_DB'] = os.environ.get('DB_NAME')
 
 mysql=MySQL(app)
 
